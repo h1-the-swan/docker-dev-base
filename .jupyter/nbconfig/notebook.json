@@ -1,0 +1,11 @@
+{
+  "load_extensions": {
+    "nbextensions_configurator/config_menu/main": true,
+    "contrib_nbextensions_help_item/main": true,
+    "scroll_down/main": true,
+    "snippets/main": true,
+    "varInspector/main": true,
+    "execute_time/ExecuteTime": true,
+    "scratchpad/main": true
+  }
+}
