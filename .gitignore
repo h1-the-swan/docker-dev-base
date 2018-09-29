@@ -1,0 +1,13 @@
+.atom
+.cache/
+.gemrc
+.gitconfig
+.ipython/
+.irbrc
+.local/
+.viminfo
+.vimrc
+.zcompdump
+.zsh_history
+.zshrc
+

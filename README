@@ -1,0 +1,4 @@
+Do data science development projects using docker containers. Requires Docker-ce and Docker Compose
+
+`sudo docker-compose build`
+`sudo docker-compose run docker-dev`

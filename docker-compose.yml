@@ -1,0 +1,16 @@
+version: '3'
+services:
+  docker-dev:
+    build:
+      context: .
+    ports:
+      - '8888:8888'
+    network_mode: "host"
+    # env_file:
+    #   - .env
+    # stdin_open: true
+    # tty: true
+    volumes:
+      - ./:/home/h1theswan
+      - $HOME/.vim:/home/h1theswan/.vim
+      - $HOME/.dotfiles:/home/h1theswan/.dotfiles
