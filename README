@@ -2,3 +2,6 @@ Do data science development projects using docker containers. Requires Docker-ce
 
 `sudo docker-compose build`
 `sudo docker-compose run docker-dev`
+
+To install new python packagest:
+`pip install --user <package_name>`
