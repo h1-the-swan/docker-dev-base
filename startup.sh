@@ -1,2 +1,2 @@
-./.dotfiles/script/bootstrap
+./dotfiles/script/bootstrap
 /bin/zsh

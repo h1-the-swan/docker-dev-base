@@ -1,7 +1,5 @@
 FROM python:3.6
 
-ARG myhomedir
-
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
 	zsh \
@@ -13,10 +11,7 @@ RUN chsh -s /bin/zsh devuser
 
 WORKDIR /home/devuser
 
-COPY startup.sh .
-
-# RUN chmod 777 ./startup.sh
-RUN ["chmod", "+x", "./startup.sh"]
+COPY ./devuser/ ./
 
 USER devuser
 
@@ -24,8 +19,15 @@ ENV PATH=".local/bin:${PATH}"
 
 COPY requirements.txt .
 
-RUN pip install --user -r requirements.txt
+RUN pip install --user -r requirements.txt --no-warn-script-location
+
+COPY startup.sh .
+
+# RUN chmod 777 ./startup.sh
+# RUN ["chmod", "+x", "./startup.sh"]
 
 EXPOSE 8899
 
-ENTRYPOINT ["/bin/zsh", "startup.sh"]
+RUN ls -lha
+
+ENTRYPOINT ["/bin/zsh", "./startup.sh"]

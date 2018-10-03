@@ -10,7 +10,7 @@ services:
     #   - .env
     # stdin_open: true
     # tty: true
-    volumes:
-      - ./:/home/devuser
-      - $HOME/.vim:/home/devuser/.vim
-      - $HOME/.dotfiles:/home/devuser/.dotfiles
+    # volumes:
+    #   - ./devuser:/home/devuser
+      # - $HOME/.vim:/home/devuser/.vim
+      # - $HOME/.dotfiles:/home/devuser/.dotfiles

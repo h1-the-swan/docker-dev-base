@@ -10,8 +10,6 @@
 .zcompdump
 .zsh_history
 .zshrc
-.dotfiles
-.vim
 .ipynb_checkpoints/
 .jupyter/jupyter_nbconvert_config.json
 .jupyter/migrated
