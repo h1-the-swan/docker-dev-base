@@ -11,6 +11,6 @@ services:
     # stdin_open: true
     # tty: true
     volumes:
-      - ./:/home/h1theswan
-      - $HOME/.vim:/home/h1theswan/.vim
-      - $HOME/.dotfiles:/home/h1theswan/.dotfiles
+      - ./:/home/devuser
+      - $HOME/.vim:/home/devuser/.vim
+      - $HOME/.dotfiles:/home/devuser/.dotfiles

@@ -7,18 +7,18 @@ RUN apt-get update \
 	zsh \
 	vim-gnome
 
-RUN useradd -m --shell /bin/zsh h1theswan
+RUN useradd -m --shell /bin/zsh devuser
 
-RUN chsh -s /bin/zsh h1theswan
+RUN chsh -s /bin/zsh devuser
 
-WORKDIR /home/h1theswan
+WORKDIR /home/devuser
 
 COPY startup.sh .
 
 # RUN chmod 777 ./startup.sh
 RUN ["chmod", "+x", "./startup.sh"]
 
-USER h1theswan
+USER devuser
 
 ENV PATH=".local/bin:${PATH}"
 
