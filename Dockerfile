@@ -26,6 +26,6 @@ COPY requirements.txt .
 
 RUN pip install --user -r requirements.txt
 
-EXPOSE 8888
+EXPOSE 8899
 
 ENTRYPOINT ["/bin/zsh", "startup.sh"]
