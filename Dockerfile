@@ -11,16 +11,16 @@ RUN chsh -s /bin/zsh devuser
 
 WORKDIR /home/devuser
 
-COPY requirements.txt .
+COPY ./code/requirements.txt .
 
-COPY ./.vim/ ./.vim
-COPY ./.dotfiles/ ./.dotfiles
+COPY ./setup/.vim/ ./.vim
+COPY ./setup/.dotfiles/ ./.dotfiles
 
 RUN mkdir .jupyter
-COPY ./.jupyter/jupyter_notebook_config.json ./.jupyter/
-COPY ./.jupyter/nbconfig ./jupyter/
+COPY ./setup/.jupyter/jupyter_notebook_config.json ./.jupyter/
+COPY ./setup/.jupyter/nbconfig ./jupyter/
 
-COPY startup.sh .
+COPY ./setup/startup.sh .
 
 RUN chown -R devuser .
 
