@@ -1,0 +1,6 @@
+[submodule ".dotfiles"]
+	path = .dotfiles
+	url = git@github.com:h1-the-swan/dotfiles
+[submodule ".vim"]
+	path = .vim
+	url = git@github.com:h1-the-swan/.vim

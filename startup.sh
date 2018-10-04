@@ -1,2 +1,3 @@
-./dotfiles/script/bootstrap
+rm .zshrc
+./.dotfiles/script/bootstrap
 /bin/zsh
